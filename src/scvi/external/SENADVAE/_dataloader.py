@@ -305,7 +305,9 @@ class SENADataLoader(AnnDataLoader):
 
     def _process_perturbation_strings(self):
         """
-        Convert perturbation annotations into numerical intervention matrices.
+        
+        Creates an intervention matrix where each row/column (not decided yet) represents 
+        that genes embedding from ESM2
 
         This method:
         1. Extracts unique perturbed genes from ALL perturbed annotation strings
